@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://fiestamatchbackend-production.up.railway.app/");
 
 function Chat({ matchId, userId, onClose, onNewMessage }) {
   const [message, setMessage] = useState("");
@@ -11,7 +11,7 @@ function Chat({ matchId, userId, onClose, onNewMessage }) {
   useEffect(() => {
     socket.emit("join_match", { matchId });
 
-    fetch("http://localhost:5000/messages/" + matchId)
+    fetch("https://fiestamatchbackend-production.up.railway.app/messages/" + matchId)
       .then(r => r.json())
       .then(data => setMessages(data))
       .catch(() => setMessages([]));
