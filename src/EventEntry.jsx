@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 
-const API = "http://localhost:5000"
+const API = "https://fiestamatchbackend-production.up.railway.app/"
 
 function EventEntry({ onEventValid }) {
   const { eventId } = useParams()
