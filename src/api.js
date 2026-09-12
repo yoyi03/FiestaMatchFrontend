@@ -1,4 +1,4 @@
-const API = "http://localhost:5000"
+const API = "https://my-proyect-fiesta.vercel.app/"
 
 // Crear usuario
 export const createUser = async (data) => {
