@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { QRCodeSVG } from "qrcode.react"
 
-const API = "https://fiestamatchbackend-production.up.railway.app/"
+const API = "https://fiestamatchbackend-production.up.railway.app"
 
 function AdminPanel() {
   const [eventName, setEventName] = useState("")
