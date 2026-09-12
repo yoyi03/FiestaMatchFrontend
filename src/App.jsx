@@ -10,7 +10,7 @@ import { FiCalendar } from "react-icons/fi"
 import { io } from "socket.io-client"
 import MatchScreen from "./MatchScreen"
 
-const socket = io(fiestamatchbackend-production.up.railway.app)
+const socket = io("fiestamatchbackend-production.up.railway.app")
 
 function Welcome({ goToCreate }) {
   return (
